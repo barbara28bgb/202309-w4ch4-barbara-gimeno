@@ -1,39 +1,46 @@
 :root {
-  
   --main-font: "Nunito", sans-serif;
-  --font-title: font-family: 'Nunito', sans-serif;
+  --font-title: "Nunito", sans-serif;
   --light-color: #ee6336;
   --dark-color: #000;
 }
 
 *,
-::before ::after {
-box-sizing: border-box;
-
-}
-
-body,
-h1,
-h2,
-h3 {
-
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 ul {
   list-style: none;
 }
 
-a, {
+a {
   text-decoration: none;
- color: inherit;  
+  color: inherit;
 }
 
-button {
+.button {
   border: none;
   font: inherit;
   cursor: pointer;
+  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  background-color: var(--light-color);
 }
 
 .main-container {
-  padding: 70rem
+  padding: 1.25rem;
+  margin: 1.25rem;
+}
+
+.main__title-shop {
+  color: var(--light-color);
+  font-family: var(--main-font);
+}
+
+.main__title-cards {
+  color: var(--dark-color);
+  font-family: var(--font-title);
 }
